@@ -24,4 +24,4 @@ modules:
     sources:
       - type: git
         url: https://codeberg.org/lazyt/ubpm.git
-        commit: 7ccdd231ac50105a337523d2cfd0df5f67f70e05
+        commit: dfdc2f4ac0609ba2b0dd14798a13679c23cf3565
