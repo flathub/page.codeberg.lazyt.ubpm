@@ -25,3 +25,5 @@ modules:
       - type: git
         url: https://codeberg.org/lazyt/ubpm.git
         commit: dfdc2f4ac0609ba2b0dd14798a13679c23cf3565
+      - type: patch
+        path: patches/fix_display_length.patch
