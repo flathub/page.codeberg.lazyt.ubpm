@@ -1,6 +1,6 @@
 app-id: page.codeberg.lazyt.ubpm
 runtime: org.kde.Platform
-runtime-version: '6.7'
+runtime-version: '6.8'
 sdk: org.kde.Sdk
 command: ubpm
 rename-desktop-file: ubpm.desktop
@@ -27,4 +27,4 @@ modules:
     sources:
       - type: git
         url: https://codeberg.org/lazyt/ubpm.git
-        commit: 036af0c1affe1f317f084a5003cc7ebf842a7bd5
+        commit: 6d23b8d81e1a5ec175721f1a359b8497a668c0e9
