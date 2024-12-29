@@ -20,6 +20,7 @@ finish-args:
   - --filesystem=/run/udev:ro
 modules:
   - name: ubpm
+    no-parallel-make: true
     buildsystem: qmake
     config-opts:
       - DEFINES+=FLATPAK
