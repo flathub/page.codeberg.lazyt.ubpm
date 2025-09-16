@@ -19,15 +19,16 @@ finish-args:
   - --filesystem=home
   - --filesystem=/run/udev:ro
 modules:
-  - name: qsqlcipher
-    buildsystem: simple
-    build-commands:
-      - cmake . && cmake --build . --parallel $(nproc)
-      - install -Dt /app/bin/sqldrivers libqsqlcipher.so
-    sources:
-      - type: git
-        url: https://github.com/chehrlic/qsqlcipher-qt6.git
-        commit: 4abad01430b0400ca8fd3818e1d73680870d1625
+# removed (incompatible with Qt updates)
+#  - name: qsqlcipher
+#    buildsystem: simple
+#    build-commands:
+#      - cmake . && cmake --build . --parallel $(nproc)
+#      - install -Dt /app/bin/sqldrivers libqsqlcipher.so
+#    sources:
+#      - type: git
+#        url: https://github.com/chehrlic/qsqlcipher-qt6.git
+#        commit: 4abad01430b0400ca8fd3818e1d73680870d1625
   - name: ubpm
     no-parallel-make: true
     buildsystem: qmake
